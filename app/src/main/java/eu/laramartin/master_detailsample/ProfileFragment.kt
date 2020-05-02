@@ -1,6 +1,5 @@
 package eu.laramartin.master_detailsample
 
-
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -18,7 +17,7 @@ class ProfileFragment : Fragment() {
     ): View? {
         lateinit var view: View
 
-        val isTablet = context!!.resources.getBoolean(R.bool.isTablet)
+        val isTablet = requireContext().resources.getBoolean(R.bool.isTablet)
 
         when {
             isTablet -> {
